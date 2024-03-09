@@ -22,36 +22,36 @@ Ensure you have the following prerequisites installed on your system:
    ```bash
    git clone https://github.com/A1ztec/twitter-clone.git
 
-cd twitter-clone
+   cd twitter-clone
+   
+   composer install
+   npm install && npm run dev
 
-composer install
-npm install && npm run dev
+   cp .env.example .env
 
-cp .env.example .env
+   php artisan key:generate
 
-php artisan key:generate
+   php artisan migrate --seed
 
-php artisan migrate --seed
-
-php artisan serve
+   php artisan serve
 
 
-#Features
-User authentication and authorization
-Tweet posting and viewing
-User following and followers
-Notifications for new followers and tweets
-Responsive design for seamless cross-device experience
-Feel free to explore the application and contribute to its development!
+Open http://localhost:8000 in your browser.
 
-#Contributing
-Fork the repository.
-Create a new branch for your feature/bug fix: git checkout -b feature-name.
-Make changes and commit: git commit -m 'Add new feature'.
-Push to your fork: git push origin feature-name.
-Open a pull request on GitHub.
-License
-This project is licensed under the MIT License
 
+# Features
+ ### User authentication and authorization
+### Tweet posting and viewing
+### User following and followers
+### Notifications for new followers and tweets
+### Responsive design for seamless cross-device experience
+### Feel free to explore the application and contribute to its development!
+
+# Contributing
+### Fork the repository.
+### Create a new branch for your feature/bug fix: git checkout -b feature-name.
+### Make changes and commit: git commit -m 'Add new feature'.
+### Push to your fork: git push origin feature-name.
+### Open a pull request on GitHub.
 
 
